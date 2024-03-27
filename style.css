@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    max-width: 10v0w;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right bottom,#ffa585,#45c);
+    color: #fff;
+}
+
+.container{
+    border: 0.5px solid #fff;
+    border-radius: 10px;
+    padding: 28px 32px;
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    box-shadow: 8px 8px 4px ;
+
+}
+.container h1{
+    font-size: 1.4rem;
+    margin-block:8px ;
+}
+.PassBox{
+    background-color: #fff;
+    border: none;
+    outline: none;
+    padding: 9px;
+    width: 300px;
+    border-radius: 4px;
+    font-size: 20px;
+    margin-block: 8px;
+
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+}
