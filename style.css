@@ -42,5 +42,15 @@ body{
 }
 .row{
     display: flex;
+    margin-block: 8px;
     justify-content: space-between;
+}
+.row p, .row label{
+    flex-basis: 100%;
+    font-size: 18px;
+}
+.row input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    
 }
