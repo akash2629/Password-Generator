@@ -9,22 +9,43 @@
 </head>
 
 <body>
+    <!-- main container  -->
     <div class="container">
         <h1>Password Generator</h1>
 
+        <!-- input Box  -->
         <div class="inputBox">
-            <input type="text" class="PassBox">
+            <input id="PassBox" type="text" class="PassBox" placeholder="Password">
         </div>
-        <input type="range" min="1" max="30" value="8">
 
-        <div class="row">
-            <p>Password Length</p>
-            <span>4</span>
-        </div>
+        <!-- Password Length  -->
+        <label class="row" for="inputSlider">Password Length <span id="sliderValue">0</span></label>
+        <input id="inputSlider" type="range" min="1" max="30" value="8">
+         
+        
+        
+        <!-- Include LowerCase Letter  SECTION-->
         <div class="row">
             <label for="lowercase">Include LowerCase Letter (a-z)</label>
-            <input type="checkbox" name="lowercase" id="lowercase">
+            <input id="lowercase" type="checkbox" name="lowercase" >
         </div>
+
+        <div class="row">
+            <label for="uppercase">Include UpperCase Letter (A-Z)</label>
+            <input id="uppercase" type="checkbox" name="uppercase" >
+        </div>
+
+        <div class="row">
+            <label for="numbers">Include Numbers (0-9)</label>
+            <input id="numbers" type="checkbox" name="numbers" >
+        </div>
+
+        <div class="row">
+            <label for="symbols">Include Symbols Letter (@-*)</label>
+            <input id="symbols" type="checkbox" name="symbols" >
+       </div>
+
+      <button id="gentBtn" type="button" class="gentBtn">Generate Password</button>
     </div>
 
     <script src="script.js"></script>
